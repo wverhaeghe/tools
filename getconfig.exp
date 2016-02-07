@@ -1,0 +1,21 @@
+#!/usr/bin/expect
+set timeout 120
+set outputfile wlc_config.txt
+set output [open $outputfile "w"]
+set ip [lindex $argv 0]
+set loginUser [lindex $argv 1]
+set loginPassword [lindex $argv 2]
+set prompt "(Cisco Controller) >"
+log_user 0
+spawn ssh -l $loginUser $ip
+expect_after eof {exit 0}
+send_user "\[\+\] Logged in...\n"
+expect "User:" {send "$loginUser\r"}
+expect "Password:" {send "$loginPassword\r"}
+expect $prompt {}
+send_user "\[\+\] Disabling paging...\n"
+send "config paging disable\r"
+send_user "\[\+\] Getting show run-config...\n"
+send "show run-config\r"
+expect "*..." {send "\r"} 
+expect $prompt {}

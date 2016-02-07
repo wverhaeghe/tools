@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<commands>
+	<multicast>
+		<multicast_cmd name='config network multicast global enable'></multicast_cmd> 
+	</multicast>
+	<mdns>
+		<mdns_cmd name='config mdns snooping enable'></mdns_cmd>
+		<mdns_cmd name='config wlan mdns-profile enable all'></mdns_cmd>
+	</mdns>
+	<cleanair>
+		<cleanair_cmd name='config 802.11b cleanair enable network'></cleanair_cmd>
+		<cleanair_cmd name='config 802.11a cleanair enable network'></cleanair_cmd>
+                <cleanair_cmd name='config advanced 802.11a channel cleanair-event enable'></cleanair_cmd>
+		<cleanair_cmd name='config advanced 802.11b channel cleanair-event enable'></cleanair_cmd>
+                <cleanair_cmd name='config advanced 802.11a channel cleanair-event rogue-contribution enable'></cleanair_cmd>
+                <cleanair_cmd name='config advanced 802.11b channel cleanair-event rogue-contribution enable'></cleanair_cmd>
+		<cleanair_cmd name='config advanced 802.11a channel cleanair-event rogue-contribution duty-cycle 80'></cleanair_cmd>
+                <cleanair_cmd name='config advanced 802.11b channel cleanair-event rogue-contribution duty-cycle 80'></cleanair_cmd>
+	</cleanair>
+	<security>
+		<security_cmd name='config network mgmt-via-wireless disable'></security_cmd>
+		<security_cmd name='config network webmode disable'></security_cmd>
+		<security_cmd name='config network secureweb enable'></security_cmd>
+		<security_cmd name='config network telnet disable'></security_cmd>
+		<security_cmd name='config network ssh enable'></security_cmd> 
+		<security_cmd name='config switchconfig strong-pwd all-check enable'></security_cmd>
+		<security_cmd name='config netuser maxuserlogin 5'></security_cmd>
+		<security_cmd name='config network fast-ssid-change enable'></security_cmd>
+		<security_cmd name='config wps client-exclusion 802.11-assoc enable'></security_cmd>
+		<security_cmd name='config wps client-exclusion 802.11-auth enable'></security_cmd>
+		<security_cmd name='config wps client-exclusion 802.1x-auth enable'></security_cmd>
+		<security_cmd name='config wps client-exclusion ip-theft enable'></security_cmd>
+		<security_cmd name='config wps client-exclusion web-auth enable'></security_cmd>
+		<security_cmd name='config wps client-exclusion all enable'></security_cmd>
+		<security_cmd name='config snmp v3user delete default'></security_cmd>
+                <security_cmd name='config snmp community delete public'></security_cmd>
+                <security_cmd name='config snmp community delete private'></security_cmd>
+		<security_cmd name='config rogue detection min-rssi -70'></security_cmd>
+		<security_cmd name='config rogue detection security-level low'></security_cmd>
+		<security_cmd name='config advanced 802.11b monitor channel-list country'></security_cmd>
+		<security_cmd name='config rogue detection monitor-ap transient-rogue-interval 120'></security_cmd>
+		<security_cmd name='config wps mfp infrastructure enable'></security_cmd>
+		<security_cmd name='config time timezone location 14'></security_cmd>
+	</security>
+	<wlan>
+		<wlan_cmd name='config wlan ccx aironet-ie disable wlan_id Forwarding only activate for cisco voice and WGB'></wlan_cmd>
+		<wlan_cmd name='config wlan peer-blocking drop wlanid'></wlan_cmd>
+		<wlan_cmd name='config wlan local-authen disable LAN id'></wlan_cmd>
+		<wlan_cmd name='config wlan wifidirect not-allow WLAN id'></wlan_cmd>
+		<wlan_cmd name='config wlan profiling local all enable WLAN id'></wlan_cmd>
+	</wlan>
+	<radio_exb>
+		<radio_exb_cmd name='config 802.11a 11nSupport enable'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11a 11acSupport enable'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11a dtpc enable'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11a rate disabled 6'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11a rate disabled 9'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11a rate disabled 12'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11a rate disabled 18'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11a rate mandatory 24'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11a rate supported 36'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11a rate supported 48'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11a rate supported 54'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11b 11nSupport enable'></radio_exb_cmd>
+                <radio_exb_cmd name='config 802.11b dtpc enable'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11b rate disabled 1'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11b rate disabled 2'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11b rate disabled 5.5'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11b rate disabled 11'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11b rate disabled 6'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11b rate disabled 9'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11b rate supported 12'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11b rate supported 18'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11b rate mandatory 24'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11b rate supported 36'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11b rate supported 48'></radio_exb_cmd>
+		<radio_exb_cmd name='config 802.11b rate supported 54'></radio_exb_cmd>
+	</radio_exb>
+	<radio_incb>
+		<radio_incb_cmd name='config 802.11a 11nSupport enable'></radio_incb_cmd>
+                <radio_incb_cmd name='config 802.11a 11acSupport enable'></radio_incb_cmd>
+                <radio_incb_cmd name='config 802.11a dtpc enable'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11a rate disabled 6'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11a rate disabled 9'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11a rate mandatory 12'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11a rate supported 18'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11a rate supported 24'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11a rate supported 36'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11a rate supported 48'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11a rate supported 54'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11b disable network'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11b 11nSupport enable'></radio_incb_cmd>
+                <radio_incb_cmd name='config 802.11b dtpc enable'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11b rate disabled 1'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11b rate disabled 2'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11b rate disabled 5.5'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11b rate mandatory 11'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11b rate disabled 6'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11b rate disabled 9'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11b rate supported 12'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11b rate supported 18'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11b rate supported 24'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11b rate supported 36'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11b rate supported 48'></radio_incb_cmd>
+		<radio_incb_cmd name='config 802.11b rate supported 54'></radio_incb_cmd>
+	</radio_incb>
+	<rf>
+		<rf_cmd name='config 802.11a txPower global auto'></rf_cmd>
+		<rf_cmd name='config 802.11b txPower global auto'></rf_cmd>
+		<rf_cmd name='config 802.11a txPower global min 1'></rf_cmd>
+                <rf_cmd name='config 802.11b txPower global min 1'></rf_cmd>
+		<rf_cmd name='config 802.11a channel global auto'></rf_cmd>
+		<rf_cmd name='config 802.11b channel global auto'></rf_cmd>
+		<rf_cmd name='config advanced 802.11a channel dca interval 8'></rf_cmd>
+		<rf_cmd name='config advanced 802.11b channel dca interval 8'></rf_cmd>
+		<rf_cmd name='config advanced 802.11a channel global restart'></rf_cmd>
+		<rf_cmd name='config advanced 802.11b channel global restart'></rf_cmd>
+	</rf>
+	<dca>
+		<dca_cmd name='config radius auth retransmit-timeout 1 seconds>'></dca_cmd>
+		<dca_cmd name='config advanced 802.11a channel dca chan-width-11n 20 | 40 |80>  20 high normal low'></dca_cmd>
+		<dca_cmd name='config advanced 802.11a channel dca chan-width best'></dca_cmd>
+		
+                
+	</dca>
+	<qos>
+		<qos_cmd name='config qos protocol-type platinum dot1p'></qos_cmd>
+		<qos_cmd name='config qos protocol-type gold dot1p'></qos_cmd>
+		<qos_cmd name='config qos protocol-type silver dot1p'></qos_cmd>
+		<qos_cmd name='config qos protocol-type bronze dot1p'></qos_cmd>
+	</qos>
+</commands>
+
+
+
+
+
+
+
+
+
+
