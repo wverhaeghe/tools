@@ -1,11 +1,11 @@
 #!/usr/bin/expect
-set timeout 120
+set timeout 60
 set outputfile wlc_config.txt
 set output [open $outputfile "w"]
 set ip [lindex $argv 0]
 set loginUser [lindex $argv 1]
 set loginPassword [lindex $argv 2]
-set prompt "*>"
+set prompt "* >"
 spawn ssh -l $loginUser $ip
 expect_after eof {exit 0}
 send_user "\[\+\] Logged in...\n"
@@ -16,5 +16,6 @@ send_user "\[\+\] Disabling paging...\n"
 send "config paging disable\r"
 send_user "\[\+\] Getting show run-config...\n"
 send "show run-config\r"
-expect "*..." {send "\r"} 
+expect "*continue..." {send "\r"}
+set timeout 240
 expect $prompt {}
