@@ -5,8 +5,8 @@ set output [open $outputfile "w"]
 set ip [lindex $argv 0]
 set loginUser [lindex $argv 1]
 set loginPassword [lindex $argv 2]
-set prompt "(WLC-BUL-CTRL) >"
-log_user 0
+set prompt "*>"
+#log_user 0
 spawn ssh -l $loginUser $ip
 expect_after eof {exit 0}
 send_user "\[\+\] Logged in...\n"
