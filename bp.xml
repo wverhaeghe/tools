@@ -21,6 +21,7 @@
 		<security_cmd name='config network mgmt-via-wireless disable'></security_cmd>
 		<security_cmd name='config network webmode disable'></security_cmd>
 		<security_cmd name='config network secureweb enable'></security_cmd>
+		<security_cmd name='config network secureweb cipher-option high enable'></security_cmd>
 		<security_cmd name='config network telnet disable'></security_cmd>
 		<security_cmd name='config network ssh enable'></security_cmd> 
 		<security_cmd name='config switchconfig strong-pwd all-check enable'></security_cmd>
