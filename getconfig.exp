@@ -1,7 +1,5 @@
 #!/usr/bin/expect
 set timeout 60
-set outputfile wlc_config.txt
-set output [open $outputfile "w"]
 set ip [lindex $argv 0]
 set loginUser [lindex $argv 1]
 set loginPassword [lindex $argv 2]
