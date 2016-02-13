@@ -125,10 +125,12 @@
                 
 	</dca>
 	<qos>
+		<qos_cmd name='config wlan disable all'></qos_cmd>
 		<qos_cmd name='config qos protocol-type platinum dot1p'></qos_cmd>
 		<qos_cmd name='config qos protocol-type gold dot1p'></qos_cmd>
 		<qos_cmd name='config qos protocol-type silver dot1p'></qos_cmd>
 		<qos_cmd name='config qos protocol-type bronze dot1p'></qos_cmd>
+		<qos_cmd name='config wlan enable all'></qos_cmd>
 	</qos>
 </commands>
 
